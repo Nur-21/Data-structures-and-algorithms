@@ -18,3 +18,16 @@ For the total number of comparisons, we get the formula: (n-1) + (n-2) +...+1
 which is equal to (n*(n+1)/2) = (n^2+n)/2
 In Big-O notation, the highest order term is taken into account, i.e. n^2
 notation: O(n^2)
+
+Question 3: Time Complexity: After the sequence is sorted, which of the following cases does the number 18 fall into?
+
+Answer 3: According to the final state of the array, there will be 18 middle elements, so the answer is "Average case"
+
+Question 4: Write the first 4 steps of [7,3,5,8,2,9,4,15.6] according to the Selection Sort.
+
+Answer 4:
+[7, 3^, 5, 8, 2, 9, 4, 15, 6] -> [3, 7, 5, 8, 2, 9, 4, 15, 6]
+[3, 7, 5^, 8, 2, 9, 4, 15, 6] -> [3, 5, 7, 8, 2, 9, 4, 15, 6]
+[3, 5, 7, 8^, 2, 9, 4, 15, 6] -> [3, 5, 7, 8, 2, 9, 4, 15, 6]
+[3, 5, 7, 8, 2^, 9, 4, 15, 6] -> [2, 3, 5, 7, 8, 9, 4, 15, 6]
+[2, 3, 5, 7, 8, 9^, 4, 15, 6] -> [2, 3, 5, 7, 8, 9, 4, 15, 6]
