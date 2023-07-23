@@ -1,3 +1,20 @@
 Question 1: [22,27,16,2,18,6] 
 Q1: Write the stages of the above given sequence according to the sort type.
+
 Answer 1: 
+The selected element is compared with the elements on the left one by one and replaced if it is smaller. 
+This process repeats until the array is sorted from smallest to largest.
+1. [22,27^,16,2,18,6] (Checking if 27 is smaller than 22 , answer is no then it's gonna stay)
+2. [22,27,16^,2,18,6] (Checking if 16 is smaller than left side values answer is yes than we gonna change the place)
+3. [16,22,27,2^,18,6] -> [2,16,22,27,18,6]
+4. [2,16,22,27,18^,6] -> [2,16,18,22,27,6]
+5. [2,16,18,22,27,6^] -> [2,6,16,18,22,27]
+
+Question 2: Show Big-O 
+
+Answer 2:
+In this process, since the number of elements is n, at most n-1 comparisons are made for each value. 
+For the total number of comparisons, we get the formula: (n-1) + (n-2) +...+1
+which is equal to (n*(n+1)/2) = (n^2+n)/2
+In Big-O notation, the highest order term is taken into account, i.e. n^2
+notation: O(n^2)
