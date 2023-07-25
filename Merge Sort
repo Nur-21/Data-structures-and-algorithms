@@ -1,1 +1,18 @@
+[16,21,11,8,12,22]
+Question 1:
+Write the stages of the above array according to the sort type.
+Answer 1:
+For Merge Sort, we split the array into two groups until it has only one element. 
+Then we reassemble these groups by arranging them from left to right in ascending order.
+                   [16,21,11,8,12,22]
+         [16,21,11]------------------[8,12,22]
+    [16]-----------[21,11]-------[8]-----------[12,22]
+    [16]--------[21] ----[11]----[8]-------[12]-------[22]
+    [16]---------[11,21]---------[8]------------[12,22]
+          [11,16,21]-----------------[8,12,22]
+                   [8,11,12,16,21,22]
 
+Question 2: Show Big-O 
+Answer 2: Merge Sort is a recursive algorithm and We do the bisection operations in log(n) steps.
+In the merge step, we compare the elements and join them in order.
+So it takes O(n) time. as a result the whole operation has O(nlogn) time complexity
