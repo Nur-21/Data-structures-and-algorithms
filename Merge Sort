@@ -15,4 +15,4 @@ Then we reassemble these groups by arranging them from left to right in ascendin
 Question 2: Show Big-O 
 Answer 2: Merge Sort is a recursive algorithm and We do the bisection operations in log(n) steps.
 In the merge step, we compare the elements and join them in order.
-So it takes O(n) time. as a result the whole operation has O(nlogn) time complexity
+So it takes O(n) time. As a result the whole operation has O(nlogn) time complexity
